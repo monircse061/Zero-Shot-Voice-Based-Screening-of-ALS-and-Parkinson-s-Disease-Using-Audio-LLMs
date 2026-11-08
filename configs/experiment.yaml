@@ -1,0 +1,37 @@
+project:
+  name: zero-shot-voice-screening-als-pd
+  task: exploratory_voice_based_screening
+
+labels:
+  disease_task: [ALS, PD, HC]
+  allow_abstention: true
+  abstention_label: UNCERTAIN
+
+audio:
+  target_sample_rate: 16000
+  max_duration_seconds: 30
+  preserve_original_files: true
+
+evaluation:
+  split_unit: participant_id
+  metrics:
+    - balanced_accuracy
+    - macro_precision
+    - macro_recall
+    - macro_f1
+    - confusion_matrix
+    - sensitivity
+    - specificity
+    - auroc
+    - auprc
+
+models:
+  - name: Qwen2-Audio
+    pathway: direct_audio
+    status: prototype
+  - name: Falcon3-Audio
+    pathway: direct_audio
+    status: to_verify
+  - name: Llama
+    pathway: asr_then_text
+    status: to_implement

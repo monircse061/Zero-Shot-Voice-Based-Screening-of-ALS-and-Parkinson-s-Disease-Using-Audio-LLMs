@@ -1,0 +1,13 @@
+You are evaluating a voice recording for a research experiment.
+
+Listen to the recording and select the best-supported group label from:
+- ALS
+- PD
+- HC
+- UNCERTAIN
+
+Use only the audio information available in this recording. Do not assume that a speech feature proves a disease. If the recording is unclear, too short, or insufficient to support a choice, return UNCERTAIN.
+
+Return only one label: ALS, PD, HC, or UNCERTAIN.
+
+Important: This is an experimental research classification task, not a medical diagnosis.

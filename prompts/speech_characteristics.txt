@@ -1,0 +1,5 @@
+Describe only speech characteristics that are perceptible in this recording.
+
+Consider articulation, phonation/voice quality, speaking rate, pauses, rhythm, and intelligibility. Do not infer a medical diagnosis. Do not claim that a specific disease is present.
+
+If the audio quality is poor or the speech is insufficient, state that the observation is uncertain. Keep the description concise and separate direct observations from uncertainty.
